@@ -28,7 +28,7 @@ export const categoryList: {
 }[] = [
 	{
 		id: 'computer',
-		name: 'Computer',
+		name: 'Computer Science',
 	},
 	{
 		id: 'general_knowledge',
@@ -152,7 +152,7 @@ export const questions: quizes = [
 
 	{
 		id: 'ques_7',
-		question: 'Hackers does?',
+		question: 'What does a Hacker do?',
 		options: [
 			{ id: 1, value: 'send unesseccery mails' },
 			{ id: 2, value: "break into other people's computers" },
