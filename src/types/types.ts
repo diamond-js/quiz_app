@@ -4,7 +4,7 @@ export type answers = answer[];
 export type quizState = 'started' | 'ended';
 export type OptionLetters = 'a' | 'b' | 'c' | 'd';
 export type OptionNumbers = 0 | 1 | 2 | 3 | 4; // 0 means no options selected
-export type CategoryId = 'programming' | 'general_knowledge';
+export type CategoryId = 'computer' | 'general_knowledge';
 
 export interface quiz {
 	id: string; //identifier
