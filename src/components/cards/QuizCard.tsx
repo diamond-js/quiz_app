@@ -113,7 +113,8 @@ const QuizCard: FC<Props> = ({ MyQuiz, quizesToAnswer }) => {
 				<div className='h-8 absolute flex sm:items-center justify-center w-full top-0 sm:-translate-y-1/2'>
 					<div className='bg-[#E5E9EF] w-full h-2 relative flex items-start sm:items-center justify-center'>
 						<span className='text-xs font-medium text-[#294C81] bg-[#E5E9EF] py-[.5px] px-8 sm:px-5 sm:py-2 absolute sm:relative top-0 sm:top-auto rounded-none sm:rounded-full  rounded-bl-3xl rounded-br-3xl block  '>
-							3min
+							{quixWithCalculatedDuration.duration}
+							{quixWithCalculatedDuration.duration > 1 ? 'mins' : 'min'}
 						</span>
 					</div>
 				</div>
@@ -132,7 +133,8 @@ const QuizCard: FC<Props> = ({ MyQuiz, quizesToAnswer }) => {
 				>
 					<div className='bg-prim w-full h-2 relative flex items-start sm:items-center justify-center'>
 						<span className='text-xs font-medium  text-white bg-prim py-[.5px] px-8 sm:px-5 sm:py-2 absolute sm:relative top-0 sm:top-auto rounded-none sm:rounded-full rounded-bl-3xl rounded-br-3xl block'>
-							3min
+							{quixWithCalculatedDuration.duration}
+							{quixWithCalculatedDuration.duration > 1 ? 'mins' : 'min'}
 						</span>
 					</div>
 				</motion.div>

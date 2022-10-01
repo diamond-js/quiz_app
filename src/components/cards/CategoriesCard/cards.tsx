@@ -14,6 +14,15 @@ export const ConfirmCategory: FC<{
 	const quizInSelectedCategory = questions.filter(
 		(quiz) => quiz.categoryId === category.id
 	);
+	const calculatedDuration = quizInSelectedCategory.reduce(
+		(prev, cur) => {
+			return {
+				...prev,
+				duration: prev.duration + cur.duration,
+			};
+		},
+		{ duration: 0 }
+	).duration;
 	return (
 		<div className='p-5'>
 			<div className='mb-10 flex flex-col items-center'>
@@ -36,18 +45,8 @@ export const ConfirmCategory: FC<{
 						<li className='text-lg text-h1Clr grid grid-rows-2 gap-4'>
 							<span className='font-bold'>{quizInSelectedCategory.length}</span>
 							<span className='font-bold'>
-								{
-									quizInSelectedCategory.reduce(
-										(prev, cur) => {
-											return {
-												...prev,
-												duration: prev.duration + cur.duration,
-											};
-										},
-										{ duration: 0 }
-									).duration
-								}
-								mins
+								{calculatedDuration}
+								{calculatedDuration > 1 ? 'mins' : 'min'}
 							</span>
 						</li>
 					</ul>
