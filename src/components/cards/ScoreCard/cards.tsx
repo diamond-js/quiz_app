@@ -165,7 +165,7 @@ export const ScoreOverview: FC<ScoreOverviewProps> = function ({
 				<p className='text-lg text-center text-text'>
 					Selected <span className='font-bold'>{correctAnsCount}</span> correct
 					options out of{' '}
-					<span className='font-bold'>{totalQuestionsCount}</span> questioins{' '}
+					<span className='font-bold'>{totalQuestionsCount}</span> questions{' '}
 				</p>
 			</div>
 
