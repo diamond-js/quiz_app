@@ -67,7 +67,7 @@ const Manual: FC<Props> = ({}) => {
 					<div className='mb-5'>
 						<p className='text-text text-base mb-3'>
 							This is a Quiz app designed and programmed by{' '}
-							<HightlightedText>Dynasty Aigmbomian</HightlightedText> as a react
+							<HightlightedText>Dynasty Aigbomian</HightlightedText> as a react
 							project.
 						</p>
 						<h3 className='font-medium text-lg text-h1Clr mb-2'>
