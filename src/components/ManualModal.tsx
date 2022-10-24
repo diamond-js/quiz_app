@@ -74,7 +74,7 @@ const Manual: FC<Props> = ({}) => {
 							Technologies Used
 						</h3>
 						<div className='flex flex-wrap gap-3 mb-4'>
-							{['Taiwind css', 'HTML5', 'React', 'Typescript'].map(
+							{['Tailwind CSS', 'HTML5', 'React', 'Typescript'].map(
 								(techUsed) => {
 									return (
 										<HightlightedText key={techUsed}>
