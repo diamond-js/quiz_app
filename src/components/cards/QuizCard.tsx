@@ -142,7 +142,7 @@ const QuizCard: FC<Props> = ({ MyQuiz, quizesToAnswer }) => {
 
 				{/* content */}
 				<div className='w-full p-5'>
-					<h4 className='text-[##38404C] text-lg font-semibold text-center mb-2 mt-1'>
+					<h4 className='text-[#38404C] text-lg font-semibold text-center mb-2 mt-1'>
 						{currentQuestionIndex + 1}{' '}
 						<span className='text-[#414B5A] font-normal'>of</span>{' '}
 						{quizesToAnswer.length}{' '}
